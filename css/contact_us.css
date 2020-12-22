@@ -1,0 +1,259 @@
+@import "./common/all.css";
+@import"./common/header.css";
+@import "./common/breadcrumb.css";  /*麵包屑*/
+@import "./common/footer.css";
+@import "./common/normalize.css";
+
+.main_container{
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 0 15px;
+}
+
+main.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-top: 1px solid gray; */
+  /* margin-top: 20px; */
+  width: 100%;
+  
+}
+
+main.main>h1{
+  color: #707070;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+  /* margin: 40px; */
+}
+
+/* main.main h1{
+  margin-top: 60px;
+} */
+
+/* 表單 */
+.form_box{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  /* align-items: flex-start; */
+  /* width: 700px; */
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* box-shadow: 0px 2px 5px gray;/*陰影*/ */
+}
+form.form{
+  color: #707070;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 50%;
+
+}
+
+.username_block{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.email_block{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.tel_text_block{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.user_text_block{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.user_text_block>label{
+  margin-right: 10px;
+}
+
+/* label{
+  margin-right: 30px;
+} */
+
+.username_block input:focus{
+  box-shadow: 0px 0px 10px gray;
+}
+
+.email_block input:focus{
+  box-shadow: 0px 0px 10px gray;
+}
+
+.tel_text_block input:focus{
+  box-shadow: 0px 0px 10px gray;
+}
+
+input{
+  /* margin-right: 100px; */
+  width: 100%;
+  padding: 20px 20px;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+textarea {
+  outline: none;
+  width: 100%;
+  height: 90px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  resize: none;
+  /* margin-left: 10px; */
+  border: 1px solid gray;
+}
+
+textarea:focus{
+  box-shadow: 0px 0px 10px gray;
+}
+
+input.submit{
+  color:white;
+  background-color: #85A27E;
+  font-size: 25px;
+  cursor: pointer;
+  align-self: flex-end;
+  /* width: 70px; */
+  width: 20%;
+  height: 40px;
+  padding: 0;
+  margin: 30px 0 30px;
+  border: 1px solid #85A27E;
+
+
+}
+
+input.submit:hover{
+  background-color: #BBEBAF;
+  color:white;
+  /* box-shadow: 0px 0px 3px gray; */
+
+}
+@media (max-width:756px) {
+  .form_box{
+    width: 80%;
+  }
+  .form.form{
+    width: 60%;
+  }
+}
+
+@media (max-width:576px){
+  .form.form{
+    width: 80%;
+  }
+  input.submit{
+    font-size: 18px;
+  }
+}
+
+@media (max-width:375px){
+  .form_box{
+    width: 90%;
+  }
+  .form.form{
+    width: 90%;
+  }
+
+}
+
+
+
+/* 常見問題區塊 */
+.description{
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 70px;
+  max-width: 1200px;
+  border-top: 1px solid gray;
+  position: relative;
+
+}
+
+/* 酪梨img圖 */
+.imgLog_block{
+  position: absolute;
+  top:-170px;
+  left: 20px;
+  width: 20%;
+}
+
+.imgLog_block>img{
+  width: 100%;
+}
+
+@media (max-width:1000px) {
+  .imgLog_block{
+    width: 22%;
+    top:-130px;
+  }
+}
+
+@media (max-width:756px) {
+  .imgLog_block{
+
+    top:-100px;
+  }
+}
+@media (max-width:567px) {
+  .imgLog_block{
+    width: 25%;
+    top:-60px;
+  }
+}
+
+
+.description>ul{
+  margin-top:70px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.description>ul>a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 25px;
+  width: 50%;
+  color: #CEAC20;
+  background-color: #FEFEA7;
+  border: 1px solid #CEAC20;
+}
+
+.description>ul>a:nth-child(1),.description>ul>a:nth-child(2){
+  border-bottom:  0px;
+}
+.description>ul>a:nth-child(2n){
+  border-left:  0px;
+}
+
+.description>ul>a>li{
+
+  list-style: none;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Contact_Us</title>
+    <link rel="stylesheet" href="./css/contact_us.css">
+    <link rel="stylesheet" href="./css/common/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="user_block">
+          <li><a href="./member_login.html"><i class="fas fa-user fa-1x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
+          <li><a href="./member_login.html"><i class="fas fa-user fa-2x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+
+        </ul>
+        <a href="./index.html" class="logo_img"><img src="./images/logo_img.png" alt="logo_img"></a>
+        <!-- nav按鈕 -->
+        <button class="hamburger hamburger--3dy" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- 主選單 -->
+        <ul class="link_list">
+          <li><a href="./avocado_story.html">品牌故事</a></li>
+          <li><a href="./avocado_classroom.html">酪梨教室</a></li>
+          <li><a href="./avocado_recipe_list.html">酪梨食譜</a></li>
+          <li></li>
+          <li>
+            <div class="shop_link"><a href="#">線上購物<i class="fas fa-caret-down fa-1x"></i></a>
+              <ul class="shop_list">
+                <li><a href="./online_store_fruit.html">酪梨</a></li>
+                <li><a href="./online_store_commodity.html">手工商品</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./new.html">最新消息</a></li>
+          <li><a href="./store_information.html">店家資訊</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="main_container">
+
+      <!-- 麵包屑 -->
+        <div class="Breadcrumb_block">
+          <ul class="Breadcrumb_list">
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./contact_us.html">聯絡我們</a></li>
+          </ul>
+        </div>
+
+       <main class="main">
+         <h1>聯絡我們</h1>
+         <div class="form_box">
+           <form class="form" action="#" method="#">
+
+             <div class="username_block">
+                <!-- <label for="username_label" >聯絡姓名:</label> -->
+                <input type="text" name="username" id="username_label" placeholder="聯絡姓名">
+             </div>
+             <div class="email_block">
+                <!-- <label for="user_email_label">Email:</label> -->
+                <input type="email" name="user_email" id="user_email_label"placeholder="聯絡信箱">
+             </div>
+
+              <div class="tel_text_block">
+                <!-- <label for="user_nuber_label">電話:</label> -->
+                <input type="tel" name="user_nuber" id="user_nuber_label"placeholder="電話號碼">
+              </div>
+             <div class="user_text_block">
+               <!-- <label for="user_text_label">諮詢事項:</label> -->
+                 <!-- <textarea name="user_text" rows="10" cols="30" id="user_text_label"></textarea> -->
+                  <textarea name="user_text" id="user_text_label" placeholder="詢問事項"></textarea>
+             </div>
+             <input type="submit" name="submit" value="送出" class="submit">
+
+
+           </form>
+         </div>
+       </main>
+      </div>
+
+      <!-- 常見問題區塊 -->
+      <div class="description">
+        <div class="imgLog_block">
+          <img src="./images/picture03_img.png" alt="picture03_img">
+        </div>
+        <ul>
+          <a href="./avocado_story.html" class="description_a"><li>認識我們</li></a>
+          <a href="./online_store_fruit.html" class="description_a"><li>線上購物</li></a>
+          <a href="./avocado_recipe_list.html" class="description_a"><li>酪梨食譜</li></a>
+          <a href="contact_us.html" class="description_a"><li>聯絡我們</li></a>
+        </ul>
+      </div>
+
+      <footer class="footer">
+
+        <div class="footer_text_block">
+         <p>客服：service@bdff.tw / 03-3176585 / 07010183576</p>
+         <p>電話聯繫時間：週一～週五 上午9:30~12:00 下午14:00~17:00 </p>
+
+        </div>
+        <div class="img_block">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </div>
+        <div class="img_block">
+            <i class="fab fa-instagram-square fa-2x"></i>
+        </div>
+        <div class="img_block">
+            <i class="fab fa-twitter fa-2x"></i>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+      <script src="./js/member_login.js"></script>
+
+      <script>
+      // nav 按鈕
+         $(function(){
+           //按鈕狀態的切換
+           $("button.hamburger").on("click", function(){
+             $("nav.nav ul.link_list").toggleClass("-on");
+             // $("nav.nav ul.link_list").toggleClass('active');
+           });
+
+         });
+
+         $(function(){
+
+           // hamburger icon 的切換
+           $("button.hamburger").on("click", function(){
+             $(this).toggleClass("is-active");
+           });
+
+         });
+      </script>
+  </body>
+</html>

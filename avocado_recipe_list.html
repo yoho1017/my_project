@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Avocado_Recipe_list</title>
+    <link rel="stylesheet" href="./css/avocado_recipe_list.css">
+    <link rel="stylesheet" href="./css/common/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--動畫套件-->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="user_block">
+          <li><a href="./member_login.html"><i class="fas fa-user fa-1x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
+          <li><a href="./member_login.html"><i class="fas fa-user fa-2x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+
+        </ul>
+        <a href="./index.html" class="logo_img"><img src="./images/logo_img.png" alt="logo_img"></a>
+        <!-- nav按鈕 -->
+        <button class="hamburger hamburger--3dy" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- 主選單 -->
+        <ul class="link_list">
+          <li><a href="./avocado_story.html">品牌故事</a></li>
+          <li><a href="./avocado_classroom.html">酪梨教室</a></li>
+          <li><a href="./avocado_recipe_list.html">酪梨食譜</a></li>
+          <li></li>
+          <li>
+            <div class="shop_link"><a href="#">線上購物<i class="fas fa-caret-down fa-1x"></i></a>
+              <ul class="shop_list">
+                <li><a href="./online_store_fruit.html">酪梨</a></li>
+                <li><a href="./online_store_commodity.html">手工商品</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./new.html">最新消息</a></li>
+          <li><a href="./store_information.html">店家資訊</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner_bg">
+      <h1 class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters letters-left">酪梨</span>
+          <span class="letters ampersand">&amp;</span>
+          <span class="letters letters-right">食譜</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+    </div>
+    <div class="main_container">
+      <main class="main">
+        <!-- 麵包屑 -->
+         <div class="Breadcrumb_block">
+           <ul class="Breadcrumb_list">
+             <li><a href="./index.html">首頁</a></li>
+             <li><a href="./avocado_recipe_list.html">酪梨食譜</a></li>
+           </ul>
+         </div>
+
+        <!-- 健康食譜大標題 -->
+         <div class="recipe_title_block">
+            <h1>健康食譜</h1>
+            <h2>輕鬆出菜</h2>
+         </div>
+
+         <!-- 分隔區塊 -->
+         <!-- <div class="partition"></div> -->
+
+
+         <!-- 第一層食譜 -->
+         <div class="recipe01_list_block">
+
+           <!-- 酪梨太陽蛋食譜 -->
+           <div class="recipe01_img_block" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+             <div class="recipe01_img_list">
+               <a href="./avocado_recipe_1.html"><img class="recipe01_img" src="./images/menu_img.jpg" alt="menu_img"></a>
+             </div>
+             <div class="recipe01_text">
+               <span class="new_text">新</span>
+               <h2>酪梨太陽蛋</h2>
+               <h3>食譜</h3>
+             </div>
+             <div class="recipe01_p_text">
+               <p>兼具視覺與視覺的餐點</p>
+               <p>讓大家看了食指大動了</p>
+             </div>
+
+           </div>
+
+           <!-- 酪梨匠壽司食譜 -->
+           <div class="recipe02_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+             <div class="recipe01_img_list">
+               <a href="#"><img class="recipe01_img" src="./images/avocado_sushi_img.jpg" alt="menu_img"></a>
+             </div>
+             <div class="recipe01_text">
+               <h2>酪梨匠壽司</h2>
+               <h3>食譜</h3>
+             </div>
+           </div>
+
+           <!-- 酪梨蛋吐司食譜  -->
+           <div class="recipe03_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+             <div class="recipe01_img_list">
+               <a href="./avocado_recipe_1.html"><img class="recipe01_img" src="./images/avocado_toast_img.jpg" alt="menu_img"></a>
+             </div>
+             <div class="recipe01_text">
+               <h2>酪梨蛋吐司</h2>
+               <h3>食譜</h3>
+             </div>
+           </div>
+         </div>
+
+
+         <!-- 第二層食譜 -->
+         <div class="recipe01_list_block">
+
+           <!-- 酪梨拌鮪魚食譜 -->
+           <div class="recipe01_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+             <div class="recipe01_img_list">
+              <a href="./avocado_recipe_1.html"> <img class="recipe01_img" src="./images/avocado_tunaSalad_img.jpg" alt="menu_img"></a>
+             </div>
+             <div class="recipe01_text">
+               <h2>酪梨拌鮪魚</h2>
+               <h3>食譜</h3>
+             </div>
+
+
+           </div>
+
+           <!-- 酪梨海沙拉食譜 -->
+           <div class="recipe02_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+             <div class="recipe01_img_list">
+              <a href="./avocado_recipe_1.html"> <img class="recipe01_img" src="./images/avocado_seafoodSalad_img.jpg" alt="menu_img"></a>
+             </div>
+             <div class="recipe01_text">
+               <span class="new_text">新</span>
+               <h2>酪梨海沙拉</h2>
+               <h3>食譜</h3>
+             </div>
+             <div class="recipe01_p_text">
+               <p>色彩鮮艷又動人的料理</p>
+               <p>保證讓人吃完都想追加</p>
+             </div>
+           </div>
+
+           <!-- 酪梨佐米餅食譜  -->
+           <div class="recipe03_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+             <div class="recipe01_img_list">
+               <a href="./avocado_recipe_1.html"><img class="recipe01_img" src="./images/avocado_rice_m_img.jpg" alt="menu_img"></a>
+             </div>
+             <div class="recipe01_text">
+               <h2>酪梨佐米餅</h2>
+               <h3>食譜</h3>
+             </div>
+           </div>
+         </div>
+
+         <!-- *********************第一層RWD食譜區 *************************************-->
+          <div class=" recipeAll01_list_block">
+            <!-- 酪梨太陽蛋食譜 -->
+            <div class="recipe01_img_block" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe01_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe01_img" src="./images/menu_img.jpg" alt="menu_img"></a>
+              </div>
+              <div class="recipe01_text">
+                <span class="new_text">新</span>
+                <h2>酪梨太陽蛋</h2>
+                <h3>食譜</h3>
+              </div>
+              <div class="recipe01_p_text">
+                <p>兼具視覺與視覺的餐點</p>
+                <p>讓大家看了食指大動了</p>
+              </div>
+
+            </div>
+
+            <!-- 酪梨匠壽司食譜 -->
+            <div class="recipe02_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe01_img_list">
+                <a href="#"><img class="recipe01_img" src="./images/avocado_sushi_img.jpg" alt="menu_img"></a>
+              </div>
+              <div class="recipe01_text">
+                <h2>酪梨匠壽司</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+            <!-- 酪梨蛋吐司食譜  -->
+            <div class="recipe03_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe01_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe01_img" src="./images/avocado_toast_img.jpg" alt="menu_img"></a>
+              </div>
+              <div class="recipe01_text">
+                <h2>酪梨蛋吐司</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+            <!-- 酪梨拌鮪魚食譜 -->
+            <div class="recipe01_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe01_img_list">
+               <a href="./avocado_recipe_1.html"> <img class="recipe01_img" src="./images/avocado_tunaSalad_img.jpg" alt="menu_img"></a>
+              </div>
+              <div class="recipe01_text">
+                <h2>酪梨拌鮪魚</h2>
+                <h3>食譜</h3>
+              </div>
+
+
+            </div>
+
+            <!-- 酪梨海沙拉食譜 -->
+            <div class="recipe02_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe01_img_list">
+               <a href="./avocado_recipe_1.html"> <img class="recipe01_img" src="./images/avocado_seafoodSalad_img.jpg" alt="menu_img"></a>
+              </div>
+              <div class="recipe01_text">
+                <span class="new_text">新</span>
+                <h2>酪梨海沙拉</h2>
+                <h3>食譜</h3>
+              </div>
+              <div class="recipe01_p_text">
+                <p>色彩鮮艷又動人的料理</p>
+                <p>保證讓人吃完都想追加</p>
+              </div>
+            </div>
+
+            <!-- 酪梨佐米餅食譜  -->
+            <div class="recipe03_img_block"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe01_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe01_img" src="./images/avocado_rice_m_img.jpg" alt="menu_img"></a>
+              </div>
+              <div class="recipe01_text">
+                <h2>酪梨佐米餅</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+          </div>
+          <!-- ********************第一層RWD食譜區 ***************************************-->
+
+         <!-- 健康飲品大標題 -->
+          <div class="recipe_title_block">
+             <h3>快速製作</h3>
+             <h1>清涼飲品</h1>
+          </div>
+
+          <!-- 分隔區塊 -->
+          <!-- <div class="partition"></div> -->
+
+
+          <!-- 第三層飲品食譜 -->
+          <div class="recipe_list_block02">
+
+            <!-- 酪梨香蕉飲 -->
+            <div class="recipe04_img_block01"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe04_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe04_img" src="./images/avocado_banana_m_img.jpg" alt="avocado_banana_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <span class="new_text">新</span>
+                <h2>酪梨香蕉飲</h2>
+                <h3>食譜</h3>
+              </div>
+              <div class="recipe01_p_text">
+                <p>誰能抗拒酪梨香蕉誘惑</p>
+                <p>還不快點動手試做看看</p>
+              </div>
+            </div>
+
+            <!-- 酪梨佐冷湯-->
+            <div class="recipe04_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe05_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe05_img" src="./images/avocado_coldSoup_img.jpg" alt="avocado_coldSoup_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨佐冷湯</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- 第四層飲品食譜 -->
+          <div class="recipe_list_block03">
+
+            <!-- 酪梨蔬果飲 -->
+            <div class="recipe06_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe06_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe06_img" src="./images/avocado_vegetableJuice_img.jpg" alt="avocado_vegetableJuice_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨蔬果飲</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+            <!-- 酪梨水果飲-->
+            <div class="recipe07_img_block04"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe07_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe07_img" src="./images/avocado_MixedFruit_img.jpg" alt="avocado_MixedFruit_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <span class="new_text">新</span>
+                <h2>酪梨水果飲</h2>
+                <h3>食譜</h3>
+              </div>
+              <div class="recipe01_p_text">
+                <p>輕鬆做出好吃的輕點心</p>
+                <p>只要5分鐘即可完成它</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- 第五層飲品食譜 -->
+          <div class="recipe_list_block04">
+
+            <!-- 酪梨綜合飲 -->
+            <div class="recipe08_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe08_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe08_img" src="./images/avocado_fruitJuice_img.jpg" alt="avocado_fruitJuice_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨綜合飲</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+            <!-- 酪梨抹茶飲 -->
+            <div class="recipe09_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe09_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe09_img" src="./images/avocado_matcha_img.jpg" alt="avocado_matcha_img.jpg"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨抹茶飲</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+          </div>
+<!--**********************酪梨飲品RWD**************************************************  -->
+          <div class="recipeAll02_list_block">
+            <!-- 酪梨香蕉飲 -->
+            <div class="recipe04_img_block01"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe04_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe04_img" src="./images/avocado_banana_m_img.jpg" alt="avocado_banana_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <span class="new_text">新</span>
+                <h2>酪梨香蕉飲</h2>
+                <h3>食譜</h3>
+              </div>
+              <div class="recipe01_p_text">
+                <p>誰能抗拒酪梨香蕉誘惑</p>
+                <p>還不快點動手試做看看</p>
+              </div>
+            </div>
+
+            <!-- 酪梨佐冷湯-->
+            <div class="recipe04_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe05_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe05_img" src="./images/avocado_coldSoup_img.jpg" alt="avocado_coldSoup_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨佐冷湯</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+            <!-- 酪梨蔬果飲 -->
+            <div class="recipe06_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe06_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe06_img" src="./images/avocado_vegetableJuice_img.jpg" alt="avocado_vegetableJuice_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨蔬果飲</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+            <!-- 酪梨水果飲-->
+            <div class="recipe07_img_block04"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe07_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe07_img" src="./images/avocado_MixedFruit_img.jpg" alt="avocado_MixedFruit_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <span class="new_text">新</span>
+                <h2>酪梨水果飲</h2>
+                <h3>食譜</h3>
+              </div>
+              <div class="recipe01_p_text">
+                <p>輕鬆做出好吃的輕點心</p>
+                <p>只要5分鐘即可完成它</p>
+              </div>
+            </div>
+            <!-- 酪梨綜合飲 -->
+            <div class="recipe08_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe08_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe08_img" src="./images/avocado_fruitJuice_img.jpg" alt="avocado_fruitJuice_img"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨綜合飲</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+            <!-- 酪梨抹茶飲 -->
+            <div class="recipe09_img_block02"data-aos="flip-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
+              <div class="recipe09_img_list">
+                <a href="./avocado_recipe_1.html"><img class="recipe09_img" src="./images/avocado_matcha_img.jpg" alt="avocado_matcha_img.jpg"></a>
+              </div>
+              <div class="recipe04_text">
+                <h2>酪梨抹茶飲</h2>
+                <h3>食譜</h3>
+              </div>
+            </div>
+
+          </div>
+
+<!--******************** 酪梨飲品RWD************************************************* -->
+          <!-- 頁數 -->
+          <div class="pages_block">
+            <ul class="pages_list">
+              <a href="#"><li>1</li></a>
+              <a href="#"><li>2</li></a>
+              <a href="#"><li>3</li></a>
+            </ul>
+          </div>
+      </main>
+
+    </div>
+    <footer class="footer">
+
+      <div class="footer_text_block">
+       <p>客服：service@bdff.tw / 03-3176585 / 07010183576</p>
+       <p>電話聯繫時間：週一～週五 上午9:30~12:00 下午14:00~17:00 </p>
+
+      </div>
+      <div class="img_block">
+        <i class="fab fa-facebook-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-instagram-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-twitter fa-2x"></i>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/banner.js"></script>
+    <script>
+      AOS.init();
+
+      // nav 按鈕
+         $(function(){
+           //按鈕狀態的切換
+           $("button.hamburger").on("click", function(){
+             $("nav.nav ul.link_list").toggleClass("-on");
+             // $("nav.nav ul.link_list").toggleClass('active');
+           });
+
+         });
+
+         $(function(){
+
+           // hamburger icon 的切換
+           $("button.hamburger").on("click", function(){
+             $(this).toggleClass("is-active");
+           });
+
+         });
+   </script>
+  </body>
+</html>

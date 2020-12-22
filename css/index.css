@@ -1,0 +1,1028 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/banner.css";
+@import "./common/normalize.css";
+
+
+span{
+  color: #008523 ;
+}
+
+h1{
+  margin: 0;
+  font-size: 40px;
+  color: #707070;
+}
+
+h2{
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+  color: #707070;
+  /* word-break:break-all; */
+}
+
+p{
+ line-height: 1.5;
+ margin: 0;
+ font-size: 16px;
+ color: #8B8B8B;
+
+
+}
+
+.on{
+  opacity: 0;
+  transition: all ease .5s;
+}
+
+/* 背景箭頭 */
+
+.banner_bg{
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.banner_bg>i{
+  color: white;
+}
+
+.banner_light{
+  position: absolute;
+  max-width: 1200px;
+  transform: rotate(0deg);
+  animation-name: rotate_1;
+  animation-duration: 25s;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease
+}
+
+.banner_light>img{
+  width: 100%;
+}
+
+@keyframes rotate_1 {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  /* 25%{
+    transform: rotate(45deg);
+  } */
+  50%{
+    transform: rotate(180deg);
+  }
+  /* 75%{
+      transform: rotate(270deg);
+  } */
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* 主內容 */
+div.main_container{
+  max-width: 1200px;
+  width: 100%;
+  font-size: 0;
+  margin: 0 auto;
+  /* padding-left: 10px; */
+  /* flex-flow: row wrap; */
+}
+
+
+
+
+main.main{
+  /* padding-left: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+
+/* 酪梨故事 */
+div.homestory_block{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-top: 50px;
+  padding: 10px;
+
+}
+
+/* 我們的故事img */
+div.homestory_img_block{
+  position: relative;
+  display: flex;
+  /* max-width: 660px; */
+  width: calc(100% - 400px - 10px) ;
+  margin: 10px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+
+}
+
+/* 了解詳情 */
+.more_on{
+  font-size: 25px;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  text-decoration: none;
+  opacity: 0;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  transition: opacity 1s ease;
+}
+
+.homestory_img_block:hover .more_on{
+  opacity: 1;
+}
+
+/* 轉場動態 */
+div.homestory_img_block .homestory_img{
+  transition: transform 1s ease;
+  width: 100%;
+  /* height: 100%; */
+
+}
+
+div.homestory_img_block:hover .homestory_img{
+  transform: scale(1.2);
+}
+
+
+/* 插圖 */
+.picture02_img_block{
+  max-width: 200px;
+  width: 100%;
+
+}
+
+.picture02_img{
+  width: 100%;
+}
+
+/* 我們的故事 文字敘述 */
+div.homestory_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin-left: 50px; */
+  padding: 20px;
+  /* border: 1px solid green; */
+  min-width: 300px;
+
+
+}
+
+div.text_h1_block{
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+}
+
+/* 灰底塊 */
+div.text_graybox{
+  /* min-width: 300px; */
+  min-width: 200px;
+  height: 10px;
+  /* position: absolute; */
+  /* top:10px; */
+  z-index: -1;
+  background-color:hsla(180, 0%, 0%, 0.2);
+  /* border: 1px solid blue; */
+}
+
+div.text_h2_block{
+  font-size: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+   /* border: 1px solid blue; */
+   /* max-width: 380px; */
+   /* margin-bottom: 15px; */
+
+}
+
+
+  @media (max-width:1070px){
+      h1{
+        font-size: 35px;
+      }
+      h2{
+        font-size: 17px;
+      }
+      div.homestory_block{
+        width:100%;
+       }
+       div.homestory_img_block{
+         width:70%;
+       }
+       div.homestory_text{
+          width:30%;
+          /* align-items: center; */
+       }
+    }
+
+ @media (max-width:780px){
+
+   div.homestory_block{
+     width:100%;
+     flex-wrap: wrap;
+    }
+    div.homestory_img_block{
+      width:100%;
+    }
+    div.homestory_text{
+       width:30%;
+       /* align-items: center; */
+    }
+
+ }
+@media (max-width:778px){
+
+  div.homestory_block{
+    width:100%;
+    flex-wrap: wrap;
+   }
+   div.homestory_img_block{
+     width:100%;
+   }
+   div.homestory_text{
+      width:30%;
+      /* align-items: center; */
+   }
+}
+
+@media (max-width:576px) {
+  div.main_container{
+    width:100%;
+    margin: 0 auto;
+
+  }
+
+  div.homestory_block{
+    width:100%;
+    flex-wrap: wrap;
+
+  }
+  div.homestory_text{
+   width: 30%;
+   /* align-items: center; */
+  }
+
+  div.homestory_img_block{
+    widows: 100%;
+  }
+
+}
+
+/* 1點點  */
+div.round_block{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  font-size: 1rem;
+  max-width: 1200px;
+  min-height: 220px;
+  width: 100%;
+  /* border: 1px solid blue; */
+  margin: auto;
+
+}
+
+
+div.round_block > div{
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  background-color: hsla(130,90%,30%,0.2);
+  /* margin:0 30px; */
+  /* border: 1px solid blue; */
+}
+
+@media (max-width:576px){
+  div.round_block{
+    width:100%;
+  }
+
+}
+
+ /* 酪梨食譜 */
+
+div.menu_block{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  /* border: 1px solid red; */
+
+}
+
+
+.menu_block>.homestory_text>.text_h2_block{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid green; */
+  width: 100%;
+
+
+}
+
+/* 插圖 */
+div.picture01_img_block{
+  transform: rotate(-10deg) translate(-10%,20%);
+  padding: 0 20px;
+  width: 300px;
+  height: 300px;
+
+  /* border: 1px solid red; */
+
+}
+img.picture01_img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 食譜圖片 */
+div.menu_img_block{
+  display:flex;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  /* border: 1px solid blue; */
+  margin:10px 20px;
+}
+
+
+
+/* 了解詳情 */
+.menu_img_block .menu_more_on{
+  font-size: 25px;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  text-decoration: none;
+  opacity: 0;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  transition: opacity 1s ease;
+}
+
+.menu_img_block:hover .menu_more_on{
+  opacity: 1;
+}
+
+
+/* 過場動畫 */
+div.menu_img_block img.menu_img{
+  transition: transform 1s ease;
+  width: 100%;
+  height: 100%;
+}
+
+div.menu_img_block:hover .menu_img{
+  transform: scale(1.2);
+}
+
+@media (max-width:750px){
+   div.menu_block{
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+  div.menu_block > div.homestory_text{
+    align-items: center;
+    width: 30%;
+    order: 2;
+  }
+
+  div.menu_img_block{
+    width: 100%;
+    order: 1;
+  }
+}
+
+@media (max-width:576px) {
+   div.menu_block{
+     width: 100%;
+     flex-wrap: wrap;
+   }
+
+   div.menu_block > div.homestory_text{
+     width: 30%;
+     justify-content: center;
+     order: 2;
+
+   }
+
+   div.menu_img_block{
+     width: 100%;
+     order: 1;
+   }
+}
+
+
+/* 線上購物標題 */
+div.shop_title_block{
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100px;
+
+}
+
+.shop_text_h1_block{
+    font-size: 1rem;
+    text-align: center;
+    min-width: 300px;
+    position: relative;
+}
+
+@media (max-width:576px){
+  div.shop_title_block{
+    width:100%;
+  }
+}
+
+/* 線上商品block */
+
+div.shop_block{
+  max-width: 1200px;
+  width: 100%;
+  /* height: 800px; */
+
+  display: flex;
+  justify-content:space-around;
+  /* border: 1px solid green; */
+}
+
+
+
+/* 酪梨商品 */
+div.avocado_block{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  padding: 10px;
+}
+
+.avocado_text{
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  /* margin-top: 60px; */
+  /* border: 1px solid black; */
+}
+
+
+.avocado_img_block{
+  margin-top: 40px;
+  max-width: 400px;
+  width: 100%;
+  /* height: 100%; */
+  /* height:430px; */
+  overflow: hidden;
+  position: relative;
+}
+
+/* 過場動畫 */
+.avocado_img{
+   transition: transform 1s ease;
+   width: 100%;
+   /* height: 100%; */
+}
+
+.avocado_img_block:hover .avocado_img{
+  transform: scale(1.2);
+  opacity: 0.4;
+
+}
+
+
+.avocado_img_text{
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  top:50%;
+  left: 35%;
+  opacity: 0;
+  z-index: 1;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  transition: opacity 0.5s ease;
+}
+
+.avocado_img_block:hover .avocado_img_text{
+  opacity: 1;
+}
+
+
+/* 手工商品 */
+div.commodity_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  /* width: 500px; */
+  /* border: 1px solid red; */
+}
+
+.commodity_text{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+
+}
+
+.soapbar_img_block{
+  /* font-size: 40px; */
+  margin-top: 40px;
+  max-width: 400px;
+  width: 100%;
+
+  /* height:430px; */
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+/* 過場動畫 */
+.soapbar_img_block .soapbar_img{
+  transition: transform  1s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.soapbar_img_block:hover .soapbar_img{
+  transform: scale(1.2);
+  opacity: 0.4;
+
+}
+
+.soapbar_img_text{
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  top:50%;
+  left: 35%;
+  opacity: 0;
+  z-index: 1;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  transition: opacity 0.5s ease;
+}
+
+.soapbar_img_block:hover .soapbar_img_text{
+  opacity: 1;
+}
+
+@media (max-width:768px){
+  div.shop_block{
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+  div.avocado_block{
+      width: 100%;
+      /* border: 1px solid red; */
+      align-items: center;
+  }
+
+  div.commodity_block{
+    width: 100%;
+    /* border: 1px solid red; */
+    align-items: center;
+  }
+}
+
+
+
+@media (max-width:576px){
+  div.shop_block{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  div.avocado_block{
+      width: 100%;
+      align-items: center;
+  }
+  div.commodity_block{
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+
+/* 智慧王 */
+div.Knowledge_block{
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  /* min-height: 800px; */
+  /* border: 1px solid red; */
+
+}
+
+/* 對話框M */
+div.bialog_box1_block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+div.border_box1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+div.border_box1_1{
+  padding: 0 50px;
+  min-height: 100px;
+  background-color: #FFFF88;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+
+
+
+}
+
+.border_box1_1>h2{
+  margin: 0;
+  font-size: 30px;
+
+}
+
+
+/* 對話框M箭頭 */
+.border_box1_arrow{
+  border-top:20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 60px solid #FFFF88;
+}
+
+
+
+/* 對話框L */
+div.bialog_box2_block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  /* border: 1px solid blue; */
+
+}
+
+.border_box2{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+.border_box2_1{
+  font-size: 16px;
+  background-color: #FFFF88;
+  border-radius: 20px;
+  padding: 0 30px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.borderbox2_h2_text>h2{
+  margin: 15px 0 15px 0;
+}
+
+/* 對話框L箭頭 */
+.border_box2_arrow{
+  border-top:20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 60px solid #FFFF88;
+}
+
+/* 燈泡區塊 */
+div.light_bulb_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+/* 了解詳情 */
+.light_bulb_img>a>p{
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top:60%;
+  left: 60%;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.light_bulb_block:hover .light_bulb_img>a>p{
+  opacity: 1;
+}
+
+.light_bulb_img{
+  width: 325px;
+  height: 500px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.light_bulb_01_img{
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+}
+
+.light_bulb_02_img{
+  width: 100%;
+  z-index: -1;
+  position:absolute;
+  transform: scale(1);
+
+}
+
+.light_bulb_img:hover .light_bulb_02_img{
+   z-index: 1;
+   transform: scale(1.1);
+}
+
+@media (max-width:1156px){
+  div.Knowledge_block{
+    width: 100%;
+   /* flex-wrap: wrap; */
+  }
+  div.bialog_box1_block{
+    width: 33%;
+  }
+  div.light_bulb_block{
+    width: 33%;
+  }
+  div.bialog_box2_block{
+    width:33%;
+  }
+  h2{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .border_box2_1{
+    padding: 15px;
+  }
+}
+
+@media (max-width:1053px){
+
+   div.Knowledge_block{
+    width: 100%;
+   flex-wrap: wrap;
+  }
+
+  div.bialog_box1_block{
+    width: 100%;
+  }
+  div.light_bulb_block{
+    width: 100%;
+  }
+  div.bialog_box2_block{
+    width:100%;
+  }
+
+}
+
+@media (max-width:576px){
+  div.Knowledge_block{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+
+  div.bialog_box1_block{
+    width: 100%;
+  }
+
+  div.light_bulb_block{
+      width: 100%;
+  }
+
+  div.bialog_box2_block{
+    width: 100%;
+  }
+
+}
+
+@media (max-width:375px){
+  div.light_bulb_block{
+     height: 458px;
+  }
+  div.light_bulb_img{
+      width: 80%;
+      height: 458px;
+  }
+}
+
+
+/* 最新消息 */
+div.new_block{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+div.new_img_block{
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.new_img{
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.new_img_block:hover .new_img{
+  transform: scale(1.1);
+
+}
+
+/* 了解詳情 */
+.new_more{
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top:85%;
+  right: 20px;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
+  /* border: 1px solid red; */
+}
+
+.new_img_block:hover .new_more{
+  opacity: 1;
+}
+
+div.new_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  position: relative;
+  min-width: 250px;
+  padding: 0 10px;
+  /* border: 1px solid red; */
+
+}
+
+
+@media (max-width:950px){
+  div.new_block{
+    width: 100%;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+  }
+  div.new_img_block{
+    width: 100%;
+  }
+  div.new_text{
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width:576px){
+  div.new_block{
+    width: 100%;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+  }
+
+
+  div.new_img_block{
+    width: 100%;
+  }
+
+}
+
+/* 店家資訊 */
+.storenew_block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  /* border: 1px solid red; */
+}
+
+.storenew_text{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  min-width: 250px;
+  /* border: 1px solid red; */
+  /* box-shadow: 0px 2px 6px gray; */
+  /* height: 400px; */
+}
+
+
+.storenew_img_block{
+  margin-top: 40px;
+  max-width:600px;
+  /* height: 430px; */
+  overflow: hidden;
+  position: relative;
+  /* height: 800px; */
+}
+
+
+.storenew_img{
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.storenew_img_block:hover .storenew_img{
+  transform: scale(1.1);
+}
+
+/* 了解詳情 */
+.storenew_more{
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top:85%;
+  right: 20px;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
+  /* border: 1px solid red; */
+}
+
+.storenew_img_block:hover .storenew_more{
+  opacity: 1;
+}
+
+
+@media (max-width:576px){
+  div.storenew_block{
+    width: 100%;
+  }
+
+  div.storenew_img_block{
+      width: 100%;
+  }
+}
+
+@media (max-width:414px){
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 14px;
+  }
+}

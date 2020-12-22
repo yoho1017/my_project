@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>online_store_list</title>
+    <link rel="stylesheet" href="./css/online_store_list.css">
+    <link rel="stylesheet" href="./css/common/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--動畫套件-->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="user_block">
+          <li><a href="./member_login.html"><i class="fas fa-user fa-1x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
+          <li><a href="./member_login.html"><i class="fas fa-user fa-2x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+
+        </ul>
+        <a href="./index.html" class="logo_img"><img src="./images/logo_img.png" alt="logo_img"></a>
+        <!-- nav按鈕 -->
+        <button class="hamburger hamburger--3dy" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- 主選單 -->
+        <ul class="link_list">
+          <li><a href="./avocado_story.html">品牌故事</a></li>
+          <li><a href="./avocado_classroom.html">酪梨教室</a></li>
+          <li><a href="./avocado_recipe_list.html">酪梨食譜</a></li>
+          <li></li>
+          <li>
+            <div class="shop_link"><a href="#">線上購物<i class="fas fa-caret-down fa-1x"></i></a>
+              <ul class="shop_list">
+                <li><a href="./online_store_fruit.html">酪梨</a></li>
+                <li><a href="./online_store_commodity.html">手工商品</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./new.html">最新消息</a></li>
+          <li><a href="./store_information.html">店家資訊</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner_bg">
+      <h1 class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters letters-left">線上</span>
+          <span class="letters ampersand">&amp;</span>
+          <span class="letters letters-right">購物</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+    </div>
+    <div class="main_container">
+
+      <!-- 麵包屑 -->
+      <div class="Breadcrumb_block">
+        <ul class="Breadcrumb_list">
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="./online_store_commodity.html">線上購物</a></li>
+          <li><a href="./online_store_commodity.html">手作商品</a></li>
+
+        </ul>
+      </div>
+
+      <!--主畫面 -->
+      <main class="main">
+
+       <!-- 側邊排行榜 -->
+        <aside class="aside">
+          <h3>暢銷排行</h3>
+          <!-- 暢銷品 -->
+          <div class="best_img_block">
+            <a href="./online_store_fruit_1.html">
+              <div class="best_img">
+                <img src="./images/best_good01_img.jpg" alt="best_good01_img">
+                <div class="best_text_list">
+                  <div class="best_text">熱賣中</div>
+                  <div class="best_text">紅心圓酪梨</div>
+                  <div class="best_text">NT:70/斤</div>
+                </div>
+            </div>
+           </a>
+          </div>
+
+        <!-- 暢銷品 -->
+          <div class="best_img_block">
+            <a href="./online_store_fruit_1.html">
+              <div class="best_img">
+                <img src="./images/best_good02_img.jpg" alt="best_good02_img">
+                <div class="best_text_list">
+                  <div class="best_text">熱賣中</div>
+                  <div class="best_text">綠檸檬</div>
+                  <div class="best_text">NT:20/斤</div>
+                </div>
+              </div>
+           </a>
+          </div>
+        <!-- 暢銷品 -->
+          <div class="best_img_block">
+            <a href="./online_store_commodity_1.html">
+              <div class="best_img">
+                <img src="./images/best_good03_img.jpg" alt="best_good03_img">
+                <div class="best_text_list">
+                  <div class="best_text">熱賣中</div>
+                  <div class="best_text">酪梨精油</div>
+                  <div class="best_text">NT:100/瓶</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        <!-- 暢銷品 -->
+          <div class="best_img_block">
+             <a href="./online_store_commodity_1.html">
+              <div class="best_img">
+                <img src="./images/best_good04_img.jpg" alt="best_good04_img">
+                <div class="best_text_list">
+                  <div class="best_text">熱賣中</div>
+                  <div class="best_text">酪梨肥皂</div>
+                  <div class="best_text">NT:100/個</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
+
+       <!-- 商品欄 -->
+        <div class="commodity_list_block">
+          <!-- 搜尋+標題區塊 -->
+            <div class="text_title_block">
+              <form class="search_block" action="#" method="post">
+                 <input type="text" placeholder="搜尋商品" class="search">
+                 <i class="fas fa-search fa-2x"></i>
+              </form>
+              <h3 class="text_title">手作商品</h3>
+            </div>
+
+
+            <!--商品區塊-->
+            <div class="commodity_img_price_block">
+
+                    <!-- 單商品 -->
+                   <div class="commodity_list">
+                      <div class="commodity">
+                        <div class="commodity_img_block">
+                          <a href="./online_store_commodity_1.html"><img class="commodity_img"src="./images/soapbar02_1_img.jpg" alt="soapbar02_1_img.jpg"></a>
+                        </div>
+                         <div class="text_block">
+                           <h3>酪梨肥皂</h3>
+                           <div class="text_price">
+                             <p>NT:100/個</p>
+                             <button type="submit" name="button" class="car_button">加入購物車</button>
+                           </div>
+                         </div>
+                      </div>
+                   </div>
+
+                   <!-- 單商品 -->
+                  <div class="commodity_list">
+                     <div class="commodity">
+                       <div class="commodity_img_block">
+                         <a href="./online_store_commodity_1.html"><img class="commodity_img"src="./images/avocado_essentialOil_img.jpg" alt="avocado_essentialOil"></a>
+                       </div>
+                        <div class="text_block">
+                          <h3>酪梨精油</h3>
+                          <div class="text_price">
+                            <p>NT:100/瓶</p>
+                            <button type="submit" name="button" class="car_button">加入購物車</button>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- 單商品 -->
+                  <div class="commodity_list">
+                    <div class="commodity">
+                      <div class="commodity_img_block">
+                        <a href="./online_store_commodity_1.html"><img class="commodity_img"src="./images/avocadoOil01_1_img.jpg" alt="avocadoOil01_1_img"></a>
+                      </div>
+                       <div class="text_block">
+                         <h3>手作酪梨油</h3>
+                         <div class="text_price">
+                           <p>NT:300/瓶</p>
+                           <button type="submit" name="button" class="car_button">加入購物車</button>
+                         </div>
+                       </div>
+                    </div>
+                 </div>
+
+                   <!-- 單商品 -->
+                  <div class="commodity_list">
+                     <div class="commodity">
+                       <div class="commodity_img_block">
+                         <a href="./online_store_commodity_1.html"><img class="commodity_img"src="./images/driedFruit01_1_img.jpg" alt="driedFruit01_1_img"></a>
+                       </div>
+                        <div class="text_block">
+                          <h3>手作楊桃乾</h3>
+                          <div class="text_price">
+                            <p>NT:100/包</p>
+                            <button type="submit" name="button" class="car_button">加入購物車</button>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- 單商品 -->
+                 <div class="commodity_list">
+                    <div class="commodity">
+                      <div class="commodity_img_block">
+                        <a href="./online_store_commodity_1.html"><img class="commodity_img"src="./images/driedlemon01_1_img.jpg" alt="driedlemon01_1_img"></a>
+                      </div>
+                       <div class="text_block">
+                         <h3>手作檸檬乾</h3>
+                         <div class="text_price">
+                           <p>NT:100/包</p>
+                           <button type="submit" name="button" class="car_button">加入購物車</button>
+                         </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <!-- 單商品 -->
+                 <div class="commodity_list">
+                   <div class="commodity">
+                     <div class="commodity_img_block">
+                       <a href="./online_store_commodity_1.html"><img class="commodity_img"src="./images/driedMango01_1_img.jpg" alt="driedMango01_1_img"></a>
+                     </div>
+                      <div class="text_block">
+                        <h3>手作芒果乾</h3>
+                        <div class="text_price">
+                          <p>NT:100/包</p>
+                          <button type="submit" name="button" class="car_button">加入購物車</button>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+      </main>
+      <!-- 頁數 -->
+      <div class="pages_block">
+        <ul class="pages_list">
+          <a href="#"><li>1</li></a>
+          <a href="#"><li>2</li></a>
+          <a href="#"><li>3</li></a>
+        </ul>
+      </div>
+
+      <!-- 付費與退貨資訊 -->
+      <div class="return_shipping_block">
+           <ul class="return_list">
+             <p class="return_shipping_title">退換貨/運費相關須知</p>
+             <li>退貨截止日為貨品抵達後的7天</li>
+             <li>因客戶問題而退貨將由客戶承擔費用</li>
+             <li>除非產品有缺陷，否則不接受退貨</li>
+             <li>會依據訂單填寫之收件日安排製作</li>
+             <li>相關物流需求由物流業者與您聯絡</li>
+             <li>訂購商品出貨可於會員專區查詢訂單</li>
+           </ul>
+      </div>
+
+      <!-- 聯絡資訊 -->
+      <div class="contact_information_block">
+        <div class="contact_information_list">
+          <a href="./index.html"><p>首頁</p></a>
+          <a href="./member_login.html"><p>會員/註冊</p></a>
+          <a href="./member_login.html"><p>購物車</p></a>
+          <a href="./contact_us.html"><p>聯絡我們</p></a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+
+      <div class="footer_text_block">
+       <p>客服：service@bdff.tw / 03-3176585 / 07010183576</p>
+       <p>電話聯繫時間：週一～週五 上午9:30~12:00 下午14:00~17:00 </p>
+
+      </div>
+      <div class="img_block">
+        <i class="fab fa-facebook-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-instagram-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-twitter fa-2x"></i>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="./js/banner.js"></script>
+    <script>
+    // nav 按鈕
+       $(function(){
+         //按鈕狀態的切換
+         $("button.hamburger").on("click", function(){
+           $("nav.nav ul.link_list").toggleClass("-on");
+           // $("nav.nav ul.link_list").toggleClass('active');
+         });
+
+       });
+
+       $(function(){
+
+         // hamburger icon 的切換
+         $("button.hamburger").on("click", function(){
+           $(this).toggleClass("is-active");
+         });
+
+       });
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

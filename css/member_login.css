@@ -1,0 +1,262 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/breadcrumb.css";  /*麵包屑*/
+@import "./common/footer.css";
+@import "./common/normalize.css";
+
+
+.main_container{
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  /* height: 100vh; */
+  padding: 0 15px;
+
+  /* border: 1px solid green; */
+}
+
+/* 整個頁籤及內容最外層區塊 */
+div.tab_container{
+
+  width:60%;
+  margin:0 auto;
+  margin-top: 200px;
+  /* margin-bottom: 200px; */
+
+}
+
+/* 頁籤區塊 */
+div.tab_container div.tab_list_block{
+  padding-left: 20px;
+  width: 100%;
+}
+
+/* 頁籤列表 */
+div.tab_container div.tab_list_block ul.tab_list{
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+div.tab_container div.tab_list_block ul.tab_list > li{
+  display: inline-block;
+}
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #85A27E;
+  padding: 2px 20px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  color: #ccc;
+
+  position: relative;
+  top: 1px;
+}
+
+/* 畫出底部黑線 */
+div.tab_container div.tab_list_block ul.tab_list > li > a::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: 1px;
+  background-color: #85A27E;
+  bottom:-1px;
+  left: -1px;
+  z-index: 1;
+}
+div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+  border: 1px solid #85A27E;
+  color: black;
+}
+/* 將底部黑線改成白色 */
+div.tab_container div.tab_list_block ul.tab_list > li > a.-on::after{
+  background-color: white;
+  width: 100%;
+  left: 0;
+}
+
+
+/* 頁籤內容區塊 */
+div.tab_container form.tab_contents{
+  border: 1px solid #85A27E;
+  border-radius: 5px;
+}
+div.tab_container form.tab_contents div.tab{
+  padding: 20px;
+  display: none;
+}
+
+/* 調整 */
+input,button.button_tab{
+  margin:15px 0;
+  width:100%;
+  padding:10px 0;
+  font-size:16px;
+
+}
+
+button.button_tab{
+   cursor: pointer;
+   background-color:#85A27E;
+   border:1px solid #85A27E;
+   border-radius: 5px;
+   color:white;
+}
+
+button.button_tab:hover{
+  background-color: #BBEBAF;
+  color: #85A27E;
+}
+
+div.tab a{
+   text-decoration: none;
+   align-self: flex-start;
+}
+div.tab a>p{
+  font-size:12px;
+  margin:0;
+}
+
+div.tab_container form.tab_contents div.tab.-on{
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+/*   border:1px solid red; */
+}
+
+/* 常見問題區塊 */
+.description{
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 70px;
+  max-width: 1200px;
+  border-top: 1px solid gray;
+  position: relative;
+
+}
+
+/* 酪梨img圖 */
+.imgLog_block{
+  position: absolute;
+  top:-170px;
+  left: 20px;
+  width: 20%;
+}
+
+.imgLog_block>img{
+  width: 100%;
+}
+
+@media (max-width:1000px) {
+  .imgLog_block{
+    width: 22%;
+    top:-130px;
+  }
+}
+
+@media (max-width:756px) {
+  .imgLog_block{
+
+    top:-100px;
+  }
+}
+@media (max-width:567px) {
+  .imgLog_block{
+    width: 25%;
+    top:-60px;
+  }
+}
+
+
+.description>ul{
+  margin-top:70px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.description>ul>a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 25px;
+  width: 50%;
+  color: #CEAC20;
+  background-color: #FEFEA7;
+  border: 1px solid #CEAC20;
+}
+
+.description>ul>a:nth-child(1),.description>ul>a:nth-child(2){
+  border-bottom:  0px;
+}
+.description>ul>a:nth-child(2n){
+  border-left:  0px;
+}
+
+.description>ul>a>li{
+
+  list-style: none;
+}
+
+
+@media (max-width:1200px){
+  div.tab_container{
+      width:70%;
+  }
+}
+@media (max-width:800px){
+  div.tab_container{
+      width:70%;
+  }
+}
+
+@media (max-width:576px){
+  div.tab_container{
+      width:90%;
+  }
+  div.tab_container form.tab_contents div.tab.-on{
+    width:90%;
+  }
+}
+
+@media (max-width:414px) {
+  div.tab_container{
+    width:90%;
+    /* margin:0 auto;
+    margin-top:200px; */
+    /* margin-bottom: 200px; */
+
+  }
+
+  div.tab_container form.tab_contents div.tab.-on{
+    width:100%;
+  }
+
+  /* 頁籤區塊 */
+  div.tab_container div.tab_list_block{
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  /* 頁籤列表 */
+  div.tab_container div.tab_list_block ul.tab_list{
+
+    display: flex;
+    justify-content: center;
+    /* font-size: 14px; */
+
+  }
+
+
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Kosugi Maru', sans-serif;
+  font-display: swap;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Kosugi Maru', sans-serif;
+  /* outline: 1px solid red; */
+
+}
+body{
+
+  margin: 0;
+  margin-right: 0;
+
+
+}
+/* img{
+  width: 100%;
+} */

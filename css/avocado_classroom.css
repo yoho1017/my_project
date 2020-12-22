@@ -1,0 +1,269 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/banner_classroom.css";
+@import "./common/breadcrumb.css";  /*麵包屑*/
+@import "./common/footer.css";
+@import "./common/normalize.css";
+
+h2{
+  font-size: 30px ;
+  line-height: 1;
+  color: #707070;
+}
+
+h3{
+  font-size: 20px ;
+  line-height: 1;
+  color: #707070;
+}
+
+p{
+  font-size: 16px ;
+  margin: 10px 0 10px 0;
+  color: #8B8B8B;
+}
+
+
+
+ /* nav 定位連結變色 */
+ul.link_list>li:nth-child(2) a{
+  pointer-events:none;
+  background-color:#BBEBAF ;
+  border-radius: 5px;
+}
+
+
+
+.main_container{
+  font-size: 0;
+  /* display: flex;
+  justify-content: space-between; */
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  /* border: 1px solid green; */
+  flex-flow: row wrap;
+}
+
+
+
+/* 酪梨常識 */
+div.knowledge_1{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* max-width: 1200px;
+  width: 100%; */
+  /* border: 1px solid red; */
+}
+/*常識1圖片*/
+.knowledge_1_img{
+  max-width: 400px;
+  width: 100%;
+  padding: 0 10px;
+  /* margin-right: 30px; */
+  /* width: 40%; */
+  /* border: 1px solid blue; */
+}
+
+/* 常識文字 */
+.knowledge_1_text_block{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  padding: 0 10px;
+  max-width: 580px;
+  width: 100%;
+  /* width: 60%; */
+  word-wrap: break-all;
+  /* border: 1px solid green; */
+}
+
+.line_block{
+  width: 100%;
+  border: 1px solid gray;/*分隔線*/
+}
+
+.knowledge_1_text_block > p{
+  /* font-size: 20px; */
+  text-align: center;
+}
+
+@media (max-width:900px){
+     .knowledge_1{
+       width: 100%;
+       flex-wrap: wrap;
+     }
+     .knowledge_1_img{
+        width: 50%;
+     }
+     .knowledge_1_text_block{
+       width: 60%;
+     }
+     .line_block{
+       width: 100%;
+     }
+   .knowledge_1_text_block.re{
+     order: 2;
+   }
+   .knowledge_1_img.re{
+      order:1;
+   }
+
+  }
+
+@media (max-width:576px){
+  h2{
+    font-size: 27px;
+  }
+
+  h3{
+    font-size: 18px ;
+  }
+  p{
+    font-size: 12px;
+  }
+
+  .knowledge_1_img{
+       width: 100%;
+    }
+  .knowledge_1_text_block{
+      width: 100%;
+    }
+  .line_block{
+      width: 100%;
+    }
+  }
+
+
+
+/* 購物與食譜區塊 */
+.online_list{
+  margin-top: 150px;
+  max-width: 1200px;
+  display: flex;
+  justify-content:space-around;
+  text-align: center;
+  border-top: 1px solid gray;/*分隔線*/
+}
+.online_menu>h2{
+  margin-top: 30px;
+}
+
+.online_store>h2{
+  margin-top: 30px;
+}
+
+
+
+/* 食譜區 */
+.online_menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.menu_img_block{
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  /* height:500px; */
+  overflow: hidden;
+
+}
+
+
+
+.menu_img_block>h3{
+  background-color: hsla(180, 40%, 40%, 0.7);
+  position: absolute;
+  top:50%;
+  width: 100%;
+  padding: 30px 10px;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.menu_img_block:hover h3{
+  opacity: 1;
+}
+
+
+
+.menu_img{
+  max-width: 350px;
+  margin-top: 30px;
+  transform: scale(1);
+  /* opacity: 1; */
+  transition: transform 0.3s ease;
+}
+
+.menu_img_block:hover .menu_img{
+  /* opacity: 0.8; */
+  transform: scale(1.05);
+  /* box-shadow: 3px 5px 3px black; */
+}
+
+
+
+/* 線上購物區 */
+.online_store{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avocado_img_block{
+  align-items: center;
+  position: relative;
+  max-width:380px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.avocado_img_block > h3{
+  background-color: hsla(180, 40%, 40%, 0.7);
+  position: absolute;
+  top:50%;
+  width: 100%;
+  padding: 30px 10px;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.avocado_img_block:hover h3{
+  opacity: 1;
+}
+
+
+.avocado_img{
+  width: 100%;
+  margin-top: 30px;
+  transform: scale(1);
+  /* opacity: 1; */
+  transition: transform 0.3s ease;
+}
+
+.avocado_img_block:hover .avocado_img{
+  /* opacity: 0.8; */
+  transform: scale(1.05);
+  /* box-shadow: 3px 5px 3px black; */
+}
+@media (max-width:900px) {
+  div.online_list{
+    width: 100%;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+}

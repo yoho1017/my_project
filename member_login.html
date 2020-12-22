@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Member_login</title>
+    <link rel="stylesheet" href="./css/member_login.css">
+    <link rel="stylesheet" href="./css/common/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="user_block">
+          <li><a href="./member_login.html"><i class="fas fa-user fa-1x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
+          <li><a href="./member_login.html"><i class="fas fa-user fa-2x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+
+        </ul>
+        <a href="./index.html" class="logo_img"><img src="./images/logo_img.png" alt="logo_img"></a>
+        <!-- nav按鈕 -->
+        <button class="hamburger hamburger--3dy" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- 主選單 -->
+        <ul class="link_list">
+          <li><a href="./avocado_story.html">品牌故事</a></li>
+          <li><a href="./avocado_classroom.html">酪梨教室</a></li>
+          <li><a href="./avocado_recipe_list.html">酪梨食譜</a></li>
+          <li></li>
+          <li>
+            <div class="shop_link"><a href="#">線上購物<i class="fas fa-caret-down fa-1x"></i></a>
+              <ul class="shop_list">
+                <li><a href="./online_store_fruit.html">酪梨</a></li>
+                <li><a href="./online_store_commodity.html">手工商品</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./new.html">最新消息</a></li>
+          <li><a href="./store_information.html">店家資訊</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main_container">
+      <div class="tab_container">
+         <div class="tab_list_block">
+           <ul class="tab_list">
+             <li><a href="#" data-target="tab1" class="tab -on">會員</a></li>
+             <li><a href="#" data-target="tab2" class="tab">註冊</a></li>
+           </ul>
+         </div>
+
+         <form class="tab_contents"  action="#" method="post">
+
+            <div class="tab tab1 -on">
+              <button type="button" name="button" class="button_tab">FB登入</button>
+              <input type="text" placeholder="請輸入帳號" id="username">
+              <input type="password" placeholder="請輸入密碼" id="password">
+              <a href="#"><p>忘記密碼?</p></a>
+              <button type="button" name="button" class="button_tab">帳號登入</button>
+
+            </div>
+            <div class="tab tab2">
+              <input type="text" placeholder="請輸入姓名" id="cre_name">
+              <input type="password" placeholder="請輸入密碼" id="cre_password">
+              <input type="email" placeholder="請輸入信箱" id="email">
+              <input type="text" placeholder="請輸入地址" id="address">
+              <input type="tel" placeholder="請輸入電話" id="phone">
+              <button type="button" name="button" class="button_tab">會員註冊</button>
+            </div>
+
+          </form>
+
+        </div>
+
+
+     </div>
+     <!-- 常見問題區塊 -->
+     <div class="description">
+       <div class="imgLog_block">
+         <img src="./images/picture03_img.png" alt="picture03_img">
+       </div>
+       <ul>
+         <a href="./avocado_story.html" class="description_a"><li>認識我們</li></a>
+         <a href="./online_store_fruit.html" class="description_a"><li>線上購物</li></a>
+         <a href="./avocado_recipe_list.html" class="description_a"><li>酪梨食譜</li></a>
+         <a href="./contact_us.html" class="description_a"><li>聯絡我們</li></a>
+       </ul>
+     </div>
+
+     <footer class="footer">
+
+       <div class="footer_text_block">
+        <p>客服：service@bdff.tw / 03-3176585 / 07010183576</p>
+        <p>電話聯繫時間：週一～週五 上午9:30~12:00 下午14:00~17:00 </p>
+
+       </div>
+       <div class="img_block">
+         <i class="fab fa-facebook-square fa-2x"></i>
+       </div>
+       <div class="img_block">
+           <i class="fab fa-instagram-square fa-2x"></i>
+       </div>
+       <div class="img_block">
+           <i class="fab fa-twitter fa-2x"></i>
+       </div>
+     </footer>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+     <script src="./js/member_login.js"></script>
+     <script>
+
+           // nav 按鈕
+              $(function(){
+                //按鈕狀態的切換
+                $("button.hamburger").on("click", function(){
+                  $("nav.nav ul.link_list").toggleClass("-on");
+                  // $("nav.nav ul.link_list").toggleClass('active');
+                });
+
+              });
+
+              $(function(){
+
+                // hamburger icon 的切換
+                $("button.hamburger").on("click", function(){
+                  $(this).toggleClass("is-active");
+                });
+
+              });
+     </script>
+  </body>
+</html>

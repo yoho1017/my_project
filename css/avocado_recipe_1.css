@@ -1,0 +1,485 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/breadcrumb.css";  /*麵包屑*/
+@import "./common/footer.css";
+@import "./common/normalize.css";
+
+h1{
+  font-size: 40px ;
+  color: #707070;
+}
+
+
+h2{
+  font-size: 30px ;
+  color: #707070;
+}
+
+li,p{
+  font-size: 16px ;
+  color: #707070;
+}
+
+span{
+  color: green ;
+
+}
+
+/* nav 定位連結變色 */
+ul.link_list>li:nth-child(3) a{
+ pointer-events:none;
+ background-color:#BBEBAF ;
+ border-radius: 5px;
+}
+
+
+
+/* 主頁內容 */
+.main_container{
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding:0 15px;/*讓縮小不會完全貼其左側*/
+  max-width: 1200px;
+  /* border: 1px solid green; */
+}
+
+main.main{
+  border-top: 1px solid gray; /*分隔線*/
+  width: 100%;
+}
+
+/* 食譜區 */
+.recipe_block{
+  margin-top: 80px;
+  width: 100%;
+  /* width: 1200px; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  /* border: 1px solid black; */
+}
+
+/* 食譜照片 */
+.recipe_block_img{
+  width: 50%;
+  font-size: 0;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+
+.recipe_block_img>img{
+  width: 100%;
+}
+
+/* 食譜標題 */
+.text_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* border: 1px solid black; */
+  width: 20%;
+}
+
+.text_block > h1{
+  margin-bottom: 70px;
+}
+
+
+/* 愛心點擊 */
+
+/* 灰色外框 */
+.heart_checkbox_block{
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  /* width: 130px; */
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid gray;/*外框*/
+
+}
+
+.heart_checkbox_block:hover{
+  background-color: #E8E8E8;
+}
+
+/* 點擊範圍 */
+#the_label{
+  padding: 10px 10px;
+
+}
+
+div.custom_checkbox input[type="checkbox"]{
+  display: none;
+}
+
+
+div.custom_checkbox input[type="checkbox"] + label::before{
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/heart_img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top:10px;
+  right: 5px;
+
+}
+
+
+div.custom_checkbox input[type="checkbox"]:checked + label::before{
+  background-image: url("../images/heart_red_img.png");
+}
+
+#the_label:hover{
+  cursor: pointer;
+}
+
+
+
+/* 熱門食譜 */
+.hot_recipe_block{
+  font-size: 0;
+  width: 15%;
+  /* width: 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+
+}
+
+
+.hot_recipe_block > h2{
+  font-size: 30px;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid gray; /*分隔線*/
+}
+
+.hot_recipe_img{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hot_recipe_img > a > img{
+  margin-top: 20px;
+  transform: scale(1);
+}
+
+.hot_recipe_img>a>img:hover{
+  transform: scale(1.2);
+}
+
+
+/* 製作方式+時間 */
+.recipe_table{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid gray;/*格線*/
+  width: 100%;
+  font-size: 1rem;
+  /* padding: 0 10px; */
+  margin: 0;
+  margin-top: 50px;
+  position: relative;
+
+}
+
+ul.recipe_ingredients{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.h3_title_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+}
+
+/* 藍襯底 */
+.title_box_block{
+  position: absolute;
+  width: 100%;
+  /* width: 1190px; */
+  height: 20px;
+  z-index: -1;
+  box-shadow:2px 3px 1px 2px hsla(0,10%,10%,.2);
+  background-color: hsla(180,50%,50%,0.3);
+}
+
+ul.recipe_ingredients>li{
+
+  padding: 10px 0;
+}
+
+ul.recipe_time{
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.recipe_time>li{
+  padding: 10px 0;
+}
+
+ol.recipe_way{
+  padding: 0;
+  margin: 0;
+}
+
+ol.recipe_way>li{
+  margin-left: 30px;
+  padding: 10px 0;
+}
+
+/* .recipe_table td{
+ border-bottom: 1px solid gray;
+} */
+
+
+/* 留言區 */
+.messag_eboard{
+  /* width: 1200px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  border-top: 1px solid gray; /*分隔線*/
+}
+
+
+
+.messag_eboard>textarea{
+  margin-left: 30px;
+  resize: none;
+  border-radius: 10px;
+  width: 65%;
+  /* width: 800px; */
+  height: 100px;
+  padding:10px;
+  font-size: 20px;
+
+}
+
+.messag_eboard>textarea:focus{
+  background-color: hsla(180, 50%, 50%, 0.1);
+
+}
+
+.messag_eboard > button{
+  align-self: center;
+  margin-top: 30px;
+  margin-right: -25%;
+  /* margin-right: -400px; */
+  color: green;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  background-color: #85A27E;
+  color: white;
+  border-radius: 5px;
+  transform: scale(1);
+}
+
+.messag_eboard > button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  color: green;
+  background-color: #BBEBAF;
+}
+
+/* 留言區 */
+#messag_block{
+  margin-top: 20px;
+  width: 100%;
+  /* max-width: 1200px; */
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid gray;/*格線*/
+
+}
+li.messag_li{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: hsla(100, 50%, 50%, 0.2);
+  width: 65%;
+  /* width: 800px; */
+  list-style: none;
+}
+
+/* 刪除鍵的樣式 */
+.delete_but1{
+    outline: none;
+    border: 0;
+    padding: 5px;
+    background-color:#85A27E;
+    color: white;
+    border-radius: 5px;
+}
+
+.delete_but1:hover{
+  cursor: pointer;
+  color: green;
+  background-color: #FF8000;
+}
+
+
+
+@media (max-width:1165px){
+
+  .text_block>h1{
+    font-size: 35px;
+  }
+  .custom_checkbox{
+    font-size: 18px;
+
+  }
+
+  .heart_checkbox_block{
+    display: inline-block;
+    width: 60%;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width:925px){
+
+  .hot_recipe_block > h2{
+    font-size: 25px;
+    padding: 10px 0;
+    margin: 0;
+    border-top: 1px solid gray; /*分隔線*/
+    border-bottom:  0px solid gray;/*取消分隔線*/
+  }
+
+
+  .recipe_block{
+    flex-wrap: wrap;
+  }
+
+  .recipe_block_img{
+    width: 100%;
+  }
+
+  .text_block{
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .text_block > h1{
+    margin: 0;
+  }
+
+ .heart_checkbox_block{
+   width: 20%;
+ }
+
+  .hot_recipe_block{
+    margin-top: 60px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .hot_recipe_block > h2{
+    width: 100%;
+    position:absolute;
+    top:-50px;
+
+  }
+}
+
+
+@media (max-width:576px) {
+ h2{
+    font-size: 25px;
+  }
+
+  .recipe_block{
+    flex-wrap: wrap;
+  }
+  .recipe_block_img{
+    width: 100%;
+  }
+  .text_block{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .heart_checkbox_block{
+    width: 25%;
+    height: 40px;
+  }
+
+  div.custom_checkbox input[type="checkbox"] + label::before{
+    width: 25px;
+    height: 25px;
+  }
+  #the_label{
+    font-size: 16px;
+  }
+
+
+}
+
+
+@media (max-width:375px){
+
+
+  div.custom_checkbox input[type="checkbox"] + label::before{
+    width: 20px;
+    height: 20px;
+  }
+
+   #the_label{
+     font-size: 14px;
+   }
+
+  .hot_recipe_block>a{
+    width: calc(100% / 3);
+  }
+
+  .messag_eboard>textarea{
+      width: 70%;
+      height: 70px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  li{
+    font-size: 14px;
+  }
+
+  #submit_btn1{
+    font-size: 16px;
+  }
+  .hot_recipe_img{
+    width: calc((100% - 30px)/3);
+  }
+
+}

@@ -1,0 +1,311 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/breadcrumb.css";  /*麵包屑*/
+@import "./common/footer.css";
+@import "./common/banner_store_Information.css";
+@import "./common/normalize.css";
+
+/* 共用字體 */
+h2{
+  font-size: 25px ;
+  margin: 15px 0;
+  color:#707070;
+
+}
+
+p{
+  margin: 5px 0;
+  color:#707070;
+
+}
+.connection_link_block>span{
+  /* margin: 5px 0; */
+  color:#2B8F00 ;
+
+}
+
+/* nav 定位連結變色 */
+ul.link_list>li:nth-child(7) a{
+  pointer-events:none;
+  background-color:#BBEBAF ;
+  border-radius: 5px;
+}
+
+
+/* 主內文 */
+.main_container{
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding:0 15px;/*讓縮小不會完全貼其左側*/
+  max-width: 1200px;
+  /* width: 100%; */
+  /* border: 1px solid green; */
+}
+
+main.main{
+  width:100%;
+  margin: 0 auto;
+}
+
+/* 黃對話框區塊 */
+.dialog_box_block{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+/* 黃對話箭頭 */
+.dialog_box_block .dialog_box_arrow{
+
+  border-top: 15px solid transparent;
+  border-right: 60px solid #FFF8BB;
+  border-bottom: 15px solid transparent;
+}
+
+/* 黃框框 */
+.dialog_box_block div.dialog_box_frame{
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  /* min-width: 350px; */
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #FFF8BB;
+
+
+}
+
+.dialog_box_message{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+ul.community_list{
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+
+ul.community_list>a{
+  color: hsla(145,50%,50%,1);
+  margin:0 20px;
+
+}
+
+ul.community_list a li:hover{
+  color: #FF8000;
+}
+
+
+/* 1點點  */
+div.round_block{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 150px;
+  margin: auto;
+  /* border: 1px solid blue; */
+}
+
+div.round_block > div{
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  background-color: hsla(130,90%,30%,0.2);
+  /* margin:0 55px; */
+}
+
+@media (max-width:576px){
+  div.round_block{
+    width:100%;
+  }
+
+}
+
+/* 店家資訊 */
+
+.cooperative_store_block{
+  /* margin-top: 60px; */
+  /* margin-bottom: 60px; */
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  align-items: flex-start;
+  overflow: hidden;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+
+/* 合作照片區塊*/
+div.cooperative_block{
+  position: relative;
+  width: 50%;
+}
+
+/* 店家人照片 */
+.Store01_img_block{
+  width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top:50px;
+  right: -5px;
+  border: 5px solid white;/*圓邊框*/
+
+}
+
+.Store01_img{
+  width: 100%;
+}
+
+
+.cooperative_store_img{
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.cooperative_news_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 50%;
+  /* border: 1px solid blue; */
+}
+
+/* 對話框區塊 */
+.cooperative_store_text{
+  margin: 0 20px;
+  align-self:center;
+  /* width: 550px; */
+
+}
+
+/* map地圖 */
+div.iframe_block{
+  width: 90%;
+  border-radius: 10px;
+  margin: 40px 0 0 10px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+
+
+/* 棗子店家對話框箭頭(反向) */
+/* 黃對話箭頭 */
+.dialog_box_block .dialog_box_re_arrow{
+
+  border-top: 15px solid transparent;
+  border-left: 60px solid #FFF8BB;
+  border-bottom: 15px solid transparent;
+}
+
+/* 對話框的反向 */
+.cooperative_news_block.re{
+  align-items: flex-start;
+}
+
+/* 反轉店家照片 */
+.Store01_img_block.re{
+  left: -5px;
+}
+
+/* 聯絡我們 */
+.connection_link{
+  display: flex;
+  height: 150px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+}
+
+.connection_link> a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #008523;
+
+}
+
+.connection_link> a:hover{
+  color: #FF8000;
+
+}
+@media (max-width:1080px) {
+  .cooperative_store_block{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cooperative_block{
+    width:100%;
+  }
+  .cooperative_news_block,.cooperative_news_block.re{
+    width:100%;
+    margin-top: 20px;
+
+  }
+  .cooperative_news_block.re{
+    align-items: center;
+  }
+  .dialog_box_frame{
+    width:100%;
+  }
+  div .iframe_block{
+    width: 60%;
+
+  }
+
+}
+
+@media (max-width:576px){
+  ul.community_list{
+    width: 100%;
+  }
+
+ .dialog_box_arrow,.dialog_box_re_arrow{
+    display: none;
+  }
+  div.cooperative_block{
+    width: 100%;
+  }
+  div.Store01_img_block{
+    top:35%;
+    right: 20%;
+    width: 60%;
+  }
+  div.cooperative_store_block{
+   width: 100%;
+  }
+
+  .Store01_img_block.re{
+    left: 20%;
+  }
+  .cooperative_block.re{
+    order: 1;
+
+  }
+  .cooperative_news_block.re{
+    order: 2;
+
+  }
+  div .iframe_block{
+    width: 90%;
+
+  }
+}

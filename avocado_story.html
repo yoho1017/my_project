@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Avocado_Story</title>
+    <link rel="stylesheet" href="./css/avocado_story.css">
+    <link rel="stylesheet" href="./css/common/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- 輪播 -->
+    <link rel="stylesheet" type="text/css" href="./css/common/slick.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/> -->
+    <link rel="stylesheet" type="text/css" href="./css/common/slick-theme.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"> -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--首頁標題動畫套件-->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="user_block">
+          <li><a href="./member_login.html"><i class="fas fa-user fa-1x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
+          <li><a href="./member_login.html"><i class="fas fa-user fa-2x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+
+        </ul>
+        <a href="./index.html" class="logo_img"><img src="./images/logo_img.png" alt="logo_img"></a>
+        <!-- nav按鈕 -->
+        <button class="hamburger hamburger--3dy" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- 主選單 -->
+        <ul class="link_list">
+          <li><a href="./avocado_story.html">品牌故事</a></li>
+          <li><a href="./avocado_classroom.html">酪梨教室</a></li>
+          <li><a href="./avocado_recipe_list.html">酪梨食譜</a></li>
+          <li></li>
+          <li>
+            <div class="shop_link"><a href="#">線上購物<i class="fas fa-caret-down fa-1x"></i></a>
+              <ul class="shop_list">
+                <li><a href="./online_store_fruit.html">酪梨</a></li>
+                <li><a href="./online_store_commodity.html">手工商品</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./new.html">最新消息</a></li>
+          <li><a href="./store_information.html">店家資訊</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner_bg">
+      <h1 class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters letters-left">品牌</span>
+          <span class="letters ampersand">&amp;</span>
+          <span class="letters letters-right">故事</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+    </div>
+    <div class="main_container">
+       <main class="main">
+         <!-- 麵包屑 -->
+          <div class="Breadcrumb_block">
+            <ul class="Breadcrumb_list">
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">品牌故事</a></li>
+            </ul>
+          </div>
+
+          <!-- 龍貓洞 -->
+          <div class="attractions_block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-easing="linear">
+            <section class="multiple-items">
+              <div>
+                <img class="attractions_img" src="./images/attractions01_img.jpg" alt="attractions_img">
+              </div>
+              <div>
+                <img class="attractions_img" src="./images/attractions02_img.jpg" alt="attractions_img">
+              </div>
+              <div>
+                <img class="attractions_img" src="./images/attractions03_img.jpg" alt="attractions_img">
+              </div>
+              <div>
+                <img class="attractions_img" src="./images/attractions04_img.jpg" alt="attractions_img">
+              </div>
+            </section>
+
+
+            <!-- 文字敘述 -->
+            <div class="attractions_text_block">
+              <div class="title_text_block">
+                <h2>載興是慢活純樸的小村莊</h2>
+                <div class="gray_block"></div>
+              </div>
+              <div class="text_block_p">
+                <h3>位於屏東與高雄交界的偏遠小農村</h3>
+                <p>附近有原住民部落的三地門與河堤私房景點的豆豆龍洞,</p>
+                <p>隔壁鎮是有傳統氣息的旗山老街,離美濃只需30分鐘車程</p>
+                <p>只需要過一座橋就是觀光客不斷的佛光山與佛陀紀念館。</p>
+                <br>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 老家果樹 -->
+          <div class="hometree_block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-easing="linear">
+            <div class="hometree_text_block">
+              <!-- 腳印圖區 -->
+              <!-- <div class="footprint_1_img_block">
+                <img class="footprint_right_1_img" src="./images/footprints_right.png" alt="footprint_right">
+                <img class="footprint_left_1_img" src="./images/footprints_left.png" alt="footprint_left">
+              </div> -->
+
+              <!-- 文字樹續 -->
+              <div class="attractions_text_block_2">
+                <div class="title_text_block">
+                  <h2>在地人多以從事農業為主</h2>
+                  <div class="gray_block"></div>
+                </div>
+                <div class="text_block_p">
+                  <h3>年輕人也大多數前往都市工作</h3>
+                  <p>留在村莊務農的大多都是年紀偏大的長者,</p>
+                  <p>所知道的銷售與行銷管道其實有限,一般都是賣至當地農會,</p>
+                  <p>而酪梨已經算是其中的高價水果,栽種時間長達2至5年。</p>
+                </div>
+
+              </div>
+
+
+                <!-- 腳印圖區 -->
+                <!-- <div class="footprint_2_img_block" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                  <img class="footprint_right_2_img" src="./images/footprints_right.png" alt="footprint_right">
+                  <img class="footprint_left_2_img" src="./images/footprints_left.png" alt="footprint_left">
+                </div> -->
+
+            </div>
+            <div class="hometree_img_block">
+              <img class="hometree_img" src="./images/hometree_img.jpg" alt="hometree_img">
+            </div>
+          </div>
+
+          <!-- 故事原因 -->
+          <div class="cause_block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-easing="linear">
+            <div class="cause_img_block">
+              <img class="cause_img" src="./images/cause_img.jpg" alt="cause_img">
+            </div>
+            <div class="cause_text_block">
+              <!-- 文字敘述 -->
+              <div class="attractions_text_block_2">
+                <div class="title_text_block">
+                  <h2>看著父母採收酪梨的背影</h2>
+                  <div class="gray_block"></div>
+                </div>
+                <div class="text_block_p">
+                  <h3>想著是否能增加平台銷售水果或商品</h3>
+                  <p>並增加水果通路與製作加工品,跟其他果農合作,</p>
+                  <p>找尋願意回來的在地青年果農一起做農業推廣。</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 腳印圖3區 -->
+          <!-- <div class="footprint_3_img_block" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+            <img class="footprint_right_3_img" src="./images/footprints_right.png" alt="footprint_right">
+            <img class="footprint_left_3_img" src="./images/footprints_left.png" alt="footprint_left">
+          </div> -->
+
+          <!-- 網站的成立 -->
+          <div class="hometree_block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-easing="linear">
+            <div class="hometree_text_block">
+
+              <!-- 文字敘述 -->
+              <div class="attractions_text_block_2">
+                <div class="title_text_block">
+                   <h2>酪梨Home的購物網站成立</h2>
+                  <div class="gray_block"></div>
+                </div>
+                <div class="text_block_p">
+                  <h3>與自家姐妹們發揮所學架設網站</h3>
+                  <p>協助父母銷售酪梨跟其他水果,</p>
+                  <p>當然還有銷售媽媽的天然手工商品,</p>
+                  <p>未來可以增加更多在地果農的農業品。</p>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="set_up_img_block">
+              <img class="set_up_img" src="./images/set_up_img.jpg" alt="set_up_img">
+            </div>
+          </div>
+       </main>
+    </div>
+    <footer class="footer">
+
+      <div class="footer_text_block">
+       <p>客服：service@bdff.tw / 03-3176585 / 07010183576</p>
+       <p>電話聯繫時間：週一～週五 上午9:30~12:00 下午14:00~17:00 </p>
+
+      </div>
+      <div class="img_block">
+        <i class="fab fa-facebook-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-instagram-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-twitter fa-2x"></i>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script> -->
+    <script type="text/javascript" src="./js/slick.js"></script><!--輪播-->
+    <script src="./js/banner.js"></script>
+
+    <script>
+      AOS.init();
+
+      $('.multiple-items').slick({
+          infinite: true,//循環
+          autoplay: true,//自動撥放
+          autoplaySpeed: 2000,//秒數
+          slidesToShow: 1,//一次秀幾張
+          slidesToScroll: 1//一次滑動幾張
+        });
+
+        // nav 按鈕
+           $(function(){
+             //按鈕狀態的切換
+             $("button.hamburger").on("click", function(){
+               $("nav.nav ul.link_list").toggleClass("-on");
+               // $("nav.nav ul.link_list").toggleClass('active');
+             });
+
+           });
+
+           $(function(){
+
+             // hamburger icon 的切換
+             $("button.hamburger").on("click", function(){
+               $(this).toggleClass("is-active");
+             });
+
+           });
+   </script>
+  </body>
+</html>

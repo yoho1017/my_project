@@ -1,0 +1,530 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/breadcrumb.css";  /*麵包屑*/
+@import "./common/footer.css";
+@import "./common/banner_avocado_recipe.css";
+@import "./common/normalize.css";
+
+h1{
+  font-size: 40px;
+  color: #707070;
+  /* margin: 15px 0 15px 0; */
+}
+
+h2{
+  font-size: 30px;
+  color: #707070;
+  /* margin: 15px 0 15px 0; */
+}
+
+
+h3{
+  font-size: 20px ;
+  color: #707070;
+  /* margin: 15px 0 15px 0; */
+}
+
+
+p{
+  font-size: 16px;
+  color: #707070;
+  /* margin: 15px 0 15px 0; */
+}
+
+/* nav 定位連結變色 */
+ul.link_list>li:nth-child(3) a{
+ pointer-events:none;
+ background-color:#BBEBAF ;
+ border-radius: 5px;
+}
+
+
+.main_container{
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 20px;/*讓縮小不會完全貼其左側*/
+  max-width: 1200px;
+  padding: 0 15px;
+  /* border: 1px solid green; */
+
+}
+
+
+/* 食譜大標題 */
+.recipe_title_block{
+  /* width: 1200px; */
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  border-bottom: 1px solid gray; /*分隔線*/
+  margin: 50px 0;
+}
+
+/* 分隔區塊 */
+/* .partition{
+  width: 100%;
+  height: 50px;
+  border: 1px solid red;
+} */
+
+/* 第1.2層菜單 */
+.recipe01_list_block{
+  display: flex;
+  justify-content: space-between;
+  /* width: 1200px; */
+  min-height: 900px;
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid blue; */
+}
+
+/* 酪梨太陽蛋食譜區*/
+.recipe01_img_block{
+  align-self: flex-start;
+  width: calc((100% - 40px)/3);
+  /* width: 360px;
+  min-height: 760px; */
+  /* border: 1px solid green; */
+}
+
+
+/* 酪梨太陽蛋照片 */
+.recipe01_img_list{
+  position: relative;
+  width: 100%;
+  /* width: 360px;
+  height: 540px; */
+  overflow: hidden;
+}
+
+.recipe01_img{
+  transition: transform 1s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.recipe01_img_list:hover .recipe01_img{
+  transform: scale(1.2);
+}
+
+/* 酪梨太陽蛋標題 */
+
+.recipe01_text{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#DCDCDC ;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+/* 新NEW標籤 */
+.new_text{
+  font-size: 50px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  /* width: 20%; */
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #FF8000;
+  color: white;
+
+}
+
+
+/* 新食譜說明 */
+.recipe01_p_text{
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.recipe01_p_text>p{
+  padding: 10px 5px;
+  margin: 0;
+
+}
+
+
+
+/* 酪梨匠壽司食譜區 */
+.recipe02_img_block{
+  align-self: center;
+  width: calc((100% - 40px)/3);
+  /* width: 360px;
+  min-height: 760px; */
+  /* border: 1px solid red; */
+}
+
+
+
+
+/* 酪梨蛋吐司食譜區 */
+.recipe03_img_block{
+  align-self: flex-end;
+  width: calc((100% - 40px)/3);
+  /* width: 360px;
+  min-height: 760px; */
+  /* border: 1px solid green; */
+}
+
+
+/* 健康飲品區 */
+
+/* 飲料區第三層 */
+.recipe_list_block02{
+
+  display: flex;
+  justify-content: space-around;
+  /* width: 1200px; */
+  width: 100%;
+  /* min-height: 800px; */
+  margin: auto;
+  /* border: 1px solid blue; */
+
+}
+
+/* 酪梨香蕉飲區塊 */
+
+.recipe04_img_block01{
+  width: 50%;
+  /* border: 1px solid green; */
+}
+
+.recipe04_img_list{
+  position: relative;
+  width: 100%;
+  /* width: 540px;
+  height: 540px; */
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.recipe04_img{
+  transition: transform 1s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.recipe04_img_list:hover .recipe04_img{
+  transform: scale(1.2);
+}
+
+/* 文字敘述 */
+.recipe04_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#DCDCDC ;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.recipe04_text > h2,.recipe04_text > h3{
+  padding: 0 20px;
+}
+
+/* 酪梨佐冷湯 */
+.recipe04_img_block02{
+  width: 45%;
+  /* border: 1px solid red; */
+}
+
+.recipe05_img_list{
+  position: relative;
+  width: 100%;
+  /* width: 400px;
+  height: 390px; */
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.recipe05_img{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+  transform: scale(1);
+}
+
+.recipe05_img_list:hover .recipe05_img{
+  transform: scale(1.2);
+}
+
+/* 飲料第四層 */
+
+.recipe_list_block03{
+  width: 100%;
+  /* width: 1200px; */
+  /* min-height: 900px; */
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* border: 1px solid red; */
+}
+
+/* 酪梨蔬果飲區塊 */
+.recipe06_img_block02{
+  align-self: flex-end;
+  width: 40%;
+  /* border: 1px solid blue; */
+}
+
+
+.recipe06_img_list{
+  position: relative;
+  width: 100%;
+  /* width: 430px;
+  height: 560px; */
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.recipe06_img{
+  transition: transform 1s ease;
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+}
+
+.recipe06_img_list:hover .recipe06_img{
+  transform: scale(1.2);
+}
+
+
+/* 酪梨水果飲 */
+
+.recipe07_img_block04{
+  width: 40%;
+}
+
+.recipe07_img_list{
+  position: relative;
+  width: 100%;
+  /* width: 400px;
+  height: 680px; */
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.recipe07_img{
+  transition: transform 1s ease;
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+}
+
+.recipe07_img_list:hover .recipe07_img{
+  transform: scale(1.2);
+}
+
+
+/* 飲料第五層 */
+
+.recipe_list_block04{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  /* width: 1200px;
+  min-height: 1000px; */
+  margin: auto;
+  /* border: 1px solid blue; */
+}
+
+/* 酪梨綜合飲 */
+
+.recipe08_img_block02{
+  width: 40%;
+}
+
+.recipe08_img_list{
+  position: relative;
+  width: 100%;
+  /* width: 420px;
+  height:440px; */
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.recipe08_img{
+  transition: transform 1s ease;
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+}
+
+.recipe08_img_list:hover .recipe08_img{
+  transform: scale(1.2);
+}
+
+/*  酪梨抹茶飲 */
+
+.recipe09_img_block02{
+  width: 40%;
+}
+
+.recipe09_img_list{
+  position: relative;
+  width: 100%;
+  /* width: 500px;
+  height:660px; */
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.recipe09_img{
+  transition: transform 1s ease;
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+}
+
+.recipe09_img_list:hover .recipe09_img{
+  transform: scale(1.2);
+}
+
+
+/* 頁數  */
+.pages_block{
+  margin-top: 30px;
+  width: 100%;
+  /* width: 1200px; */
+  display: flex;
+  justify-content: flex-end;
+}
+.pages_list{
+  border: 1px solid gray;/*框線*/
+  border-radius: 5px;
+  display: flex;
+  padding: 0;
+}
+
+ul.pages_list> a{
+  border-left: 1px solid gray;/*框框*/
+  text-decoration: none;
+  color:#707070;
+}
+
+ul.pages_list> a:first-child{
+  border-left: none;
+}
+
+ul.pages_list> a:hover{
+  background-color:#AFEBCD;
+}
+
+ul.pages_list> a > li{
+  font-size: 16px;
+  padding: 10px 15px;
+  list-style: none;
+}
+
+/* 頁數定位 */
+ul.pages_list>a:first-child{
+  pointer-events:none;
+  background-color:#D4D4D4;
+}
+
+
+/* 食譜+飲品區塊 RWD */
+.recipeAll01_list_block,.recipeAll02_list_block{
+  display: none;
+}
+
+
+
+@media (max-width:970px) {
+  .recipe01_list_block,.recipe_list_block02,.recipe_list_block03,.recipe_list_block04{
+    display: none;
+  }
+  .recipeAll01_list_block,.recipeAll02_list_block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0;
+  }
+  .recipe01_img_block,.recipe02_img_block,.recipe03_img_block{
+    margin-top: 10px;
+    width: calc((100% - 20px)/2);
+    align-self: flex-start;
+  }
+  .recipe04_img_block01,.recipe06_img_block02,.recipe07_img_block04,.recipe08_img_block02,.recipe09_img_block02{
+    margin-top: 10px;
+    width: calc((100% - 20px)/2);
+    align-self: flex-start;
+    /* border: 1px solid red; */
+  }
+
+  /* 新標籤 */
+  .new_text{
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+@media (max-width:765px){
+  h2{
+    font-size: 20px;
+  }
+
+  .recipe01_p_text>p{
+    font-size: 14px;
+  }
+
+}
+@media (max-width:576px){
+  h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:414px){
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 16px;
+    padding: 0;
+  }
+  h3{
+    font-size: 14px;
+
+  }
+  .recipe04_text > h2,.recipe04_text > h3{
+    padding: 0 10px;
+  }
+  .recipe01_p_text>p{
+    font-size: 12px;
+  }
+
+
+}
+
+@media (max-width:375px){
+
+  .recipe04_text > h2,.recipe04_text > h3{
+    padding: 0 10px;
+  }
+
+}
+@media (max-width:375px){
+
+  .recipe04_text > h2,.recipe04_text > h3{
+    padding: 0 10px;
+  }
+
+}

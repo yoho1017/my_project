@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>online_store</title>
+    <link rel="stylesheet" href="./css/online_store_1.css">
+    <link rel="stylesheet" href="./css/common/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--動畫套件-->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="user_block">
+          <li><a href="./member_login.html"><i class="fas fa-user fa-1x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
+          <li><a href="./member_login.html"><i class="fas fa-user fa-2x"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+
+        </ul>
+        <a href="./index.html" class="logo_img"><img src="./images/logo_img.png" alt="logo_img"></a>
+        <!-- nav按鈕 -->
+        <button class="hamburger hamburger--3dy" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- 主選單 -->
+        <ul class="link_list">
+          <li><a href="./avocado_story.html">品牌故事</a></li>
+          <li><a href="./avocado_classroom.html">酪梨教室</a></li>
+          <li><a href="./avocado_recipe_list.html">酪梨食譜</a></li>
+          <li></li>
+          <li>
+            <div class="shop_link"><a href="#">線上購物<i class="fas fa-caret-down fa-1x"></i></a>
+              <ul class="shop_list">
+                <li><a href="./online_store_fruit.html">酪梨</a></li>
+                <li><a href="./online_store_commodity.html">手工商品</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./new.html">最新消息</a></li>
+          <li><a href="./store_information.html">店家資訊</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner_bg">
+      <h1 class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters letters-left">線上</span>
+          <span class="letters ampersand">&amp;</span>
+          <span class="letters letters-right">購物</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+    </div>
+    <div class="main_container">
+      <main class="main">
+        <!-- 麵包屑 -->
+         <div class="Breadcrumb_block">
+           <ul class="Breadcrumb_list">
+             <li><a href="./index.html">首頁</a></li>
+             <li><a href="./online_store_commodity.html">線上購物</a></li>
+             <li><a href="./online_store_commodity.html">手作商品</a></li>
+             <li><a href="./online_store_commodity_1.html">酪梨肥皂</a></li>
+           </ul>
+         </div>
+         <!-- 商品區塊 -->
+         <div class="commodity_block">
+
+           <!-- 商品介紹與購物車 -->
+             <!--左商品介紹與購物車區塊 -->
+             <div class="commodity_img_block">
+               <div class="commodity_img">
+                 <img src="./images/soapbar02_1_img.jpg" alt="soapbar02_1_img" id="test_img">
+               </div>
+
+
+                <!-- 點顆愛心區-->
+                <div class="heart_block">
+                      <!-- 點擊圖案 -->
+                  <div class="commodity_list">
+                    <div class="commodity_block_img1">
+                      <img src="./images/soapbar02_1_img.jpg" alt="soapbar02_1_img">
+                    </div>
+                    <div class="commodity_block_img1">
+                      <img src="./images/soapbar02_2_img.jpg" alt="soapbar02_2_img">
+                    </div>
+                    <div class="commodity_block_img1">
+                      <img src="./images/soapbar02_3_img.jpg" alt="soapbar02_3_img">
+                    </div>
+                  </div>
+
+                  <div class="custom_checkbox_block">
+                    <div class="custom_checkbox">
+                      <input type="checkbox" id="custom_checkbox" value="1">
+                      <label for="custom_checkbox" id="heart_label">.</label>
+                    </div>
+                    <p>NT:100/個</p>
+                  </div>
+
+                </div>
+
+                <!-- 購物車 -->
+                <div class="car_block">
+                  <p>購買數量:</p>
+                  <select name="quantity" class="quantity_list">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                     <option value="6">6</option>
+                     <option value="7">7</option>
+                     <option value="8">8</option>
+                     <option value="9">9</option>
+
+                  </select>
+                  <!-- <input type="text" value="1" class="quantity"> -->
+                  <button type="submit" name="button" class="button">加入購物車</button>
+                </div>
+             </div>
+
+             <!-- 右文字敘述區 -->
+            <div class="commodity_text_block">
+
+               <div class="commodity_text1_list">
+                 <h1>酪梨肥皂</h1>
+                 <p>使用自家種植的酪梨製成</p>
+                 <p> 無添加任何化學或加工物</p>
+
+                 <div class="commodity_text2_list">
+                   <h2>有存貨</h2>
+                   <p>保存期限:3個月</p>
+                 </div>
+
+               </div>
+            </div>
+
+         </div>
+
+
+      </main>
+      <aside class="aside">
+        <!-- 暢銷文字 -->
+        <div class="best_h2_text">
+          暢銷排行
+        </div>
+        <!-- 暢銷品 -->
+        <div class="best_img_block">
+          <a href="./online_store_fruit_1.html">
+            <div class="best_img">
+              <img src="./images/best_good01_img.jpg" alt="best_good01_img">
+              <div class="best_text_list">
+                <div class="best_text">熱賣中</div>
+                <div class="best_text">紅心圓酪梨</div>
+                <div class="best_text">NT:70/斤</div>
+              </div>
+          </div>
+         </a>
+        </div>
+
+        <div class="best_img_block">
+          <a href="./online_store_fruit_1.html">
+            <div class="best_img">
+              <img src="./images/best_good02_img.jpg" alt="best_good02_img">
+              <div class="best_text_list">
+                <div class="best_text">熱賣中</div>
+                <div class="best_text">綠檸檬</div>
+                <div class="best_text">NT:20/斤</div>
+              </div>
+            </div>
+         </a>
+        </div>
+
+        <div class="best_img_block">
+          <a href="./online_store_commodity_1.html">
+            <div class="best_img">
+              <img src="./images/best_good03_img.jpg" alt="best_good03_img">
+              <div class="best_text_list">
+                <div class="best_text">熱賣中</div>
+                <div class="best_text">酪梨精油</div>
+                <div class="best_text">NT:100/瓶</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="best_img_block">
+           <a href="./online_store_commodity_1.html">
+            <div class="best_img">
+              <img src="./images/best_good04_img.jpg" alt="best_good04_img">
+              <div class="best_text_list">
+                <div class="best_text">熱賣中</div>
+                <div class="best_text">酪梨肥皂</div>
+                <div class="best_text">NT:100/個</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </aside>
+    </div>
+
+
+    <footer class="footer">
+
+      <div class="footer_text_block">
+       <p>客服：service@bdff.tw / 03-3176585 / 07010183576</p>
+       <p>電話聯繫時間：週一～週五 上午9:30~12:00 下午14:00~17:00 </p>
+
+      </div>
+      <div class="img_block">
+        <i class="fab fa-facebook-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-instagram-square fa-2x"></i>
+      </div>
+      <div class="img_block">
+          <i class="fab fa-twitter fa-2x"></i>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="./js/online_store_1.js"></script>
+    <script src="./js/banner.js"></script>
+
+    <script>
+
+    // nav 按鈕
+       $(function(){
+         //按鈕狀態的切換
+         $("button.hamburger").on("click", function(){
+           $("nav.nav ul.link_list").toggleClass("-on");
+           // $("nav.nav ul.link_list").toggleClass('active');
+         });
+
+       });
+
+       $(function(){
+
+         // hamburger icon 的切換
+         $("button.hamburger").on("click", function(){
+           $(this).toggleClass("is-active");
+         });
+
+       });
+
+
+       $(function(){
+         $("shop_link").on("click", function(){
+           $("shop_list").toggleClass("-on");
+         });
+       });
+
+
+
+    </script>
+  </body>
+</html>
